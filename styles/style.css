@@ -1,0 +1,95 @@
+.header {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    width: 300px;
+}
+
+
+.link-container {
+    margin: 5px;
+    display: flex;
+}
+
+.center-block {
+    display: flex;
+}
+
+.bike-container {
+    border: 1px red solid;
+    border-radius: 4px;
+    width: 500px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.bike-container .name {
+    border-bottom: 1px red solid;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.image-and-desc {
+    display: flex;
+    flex: 1;
+}
+
+.image-container{
+    display: flex;
+    align-items: center;
+    border-right: 1px red solid;
+}
+
+.image-container img {
+    max-width: 250px;
+}
+
+.additional-container {
+    display: flex;
+    border-top: 1px red solid;
+}
+
+.additional-container .action{
+    flex: 1;
+    background-color: aqua;
+    margin: 1px;
+    display: flex;
+    justify-content: center;
+}
+
+.desc{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.footer {
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    color: rgba(185, 188, 179, 0.863);
+}
+
+
+.hot-key-block {
+    display: none;
+}
+
+.hot-key {
+    color: rgb(17, 212, 63);
+    background-color: aqua;
+    border: dashed red;
+}
+
+.main {
+    font-size: 30px;
+}
