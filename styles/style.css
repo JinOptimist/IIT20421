@@ -4,28 +4,57 @@
     justify-content: center;
 }
 
+.logo{
+    position: absolute;
+    left: 183px;
+    width: 105px;
+    top: 17px;
+    z-index: 5;
+}
+
 .menu {
     width: 300px;
 }
 
+.menu-fly{
+    position: fixed;
+}
 
 .link-container {
     margin: 5px;
     display: flex;
 }
 
+.link-container a {
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.link-container a:hover {
+    width: 100%;
+}
+
 .center-block {
     display: flex;
 }
 
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
 .bike-container {
     border: 1px red solid;
-    border-radius: 4px;
+    border-radius: 15px;
     width: 500px;
     height: 300px;
 
     display: flex;
     flex-direction: column;
+
+    margin: 5px;
 }
 
 .bike-container .name {
@@ -36,12 +65,16 @@
     padding: 5px;
 }
 
+.bike-container .name:hover {
+    background-color: aqua;
+}
+
 .image-and-desc {
     display: flex;
     flex: 1;
 }
 
-.image-container{
+.image-container {
     display: flex;
     align-items: center;
     border-right: 1px red solid;
@@ -49,6 +82,7 @@
 
 .image-container img {
     max-width: 250px;
+    max-height: calc(300px - 35px - 25px);
 }
 
 .additional-container {
@@ -56,15 +90,24 @@
     border-top: 1px red solid;
 }
 
-.additional-container .action{
+.additional-container .action {
     flex: 1;
-    background-color: aqua;
+    background-color: pink;
     margin: 1px;
     display: flex;
     justify-content: center;
 }
 
-.desc{
+.additional-container .action:first-child{
+    border-bottom-left-radius: 15px;
+    background-color: aqua;
+}
+.additional-container .action:last-child{
+    border-bottom-right-radius: 15px;
+    background-color: aqua;
+}
+
+.desc {
     padding: 5px;
     display: flex;
     align-items: center;
