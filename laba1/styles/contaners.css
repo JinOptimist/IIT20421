@@ -36,3 +36,7 @@ h1{
 .center-block{
   display: flex;
 }
+
+.btn-container{
+  padding: 3px;
+}

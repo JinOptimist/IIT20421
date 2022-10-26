@@ -15,8 +15,8 @@
     width: 100%;
 }
 .button:hover {
-	background:linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
-	background-color:#019ad2;
+	background:linear-gradient(to bottom, #33ab73 5%, #6a11a6 100%);
+	background-color:#294752;
 }
 .button:active {
 	position:relative;
@@ -41,4 +41,62 @@
 .menu-fixed{
   position: fixed;
   border-right: 2px solid
+}
+
+.btn-container{
+	display: flex;
+	border-top: 1px solid;
+}
+
+.btn-container .like{
+	flex: 1;
+	background-color: greenyellow;
+	margin: 2px;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.btn-container .dis{
+	flex: 1;
+	background-color: rgb(228, 143, 143);
+	margin: 2px;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.btn-container .sub{
+	flex: 1;
+	background-color: rgb(216, 20, 234);
+	margin: 2px;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.btn-container .inf{
+	flex: 1;
+	background-color: rgb(107, 192, 185);
+	margin: 2px;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.btn-container .com{
+	flex: 1;
+	background-color: rgb(236, 255, 31);
+	margin: 2px;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.btn-container .like:first-child{
+	border-bottom-left-radius: 15px;
+}
+
+.btn-container .dis:last-child{
+	border-bottom-right-radius: 15px;
 }
