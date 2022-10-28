@@ -1,0 +1,91 @@
+.button {
+	box-shadow: 0px 1px 0px 0px #1d485a;
+	background:linear-gradient(to bottom, #9a11d0 5%, #2b227a 100%);
+	background-color:#1ac472;
+	border-radius:6px;
+	border:1px solid #057fd0;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #5b6178;
+    width: 100%;
+}
+.button:hover {
+	background:linear-gradient(to bottom, #33ab73 5%, #6a11a6 100%);
+	background-color:#294752;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
+
+.link-container {
+  margin: 5px;
+  display: flex;
+}
+
+.link-container a {
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.menu{
+  width: 200px;
+}
+
+.menu-fixed{
+  position: fixed;
+  border-right: 2px solid
+}
+
+.btn-container{
+	display: flex;
+	border-top: 1px solid;
+	overflow: hidden;
+}
+
+.btn-container .like{
+	background-color: greenyellow;
+}
+
+.btn-container .dis{
+	background-color: rgb(228, 143, 143);
+}
+
+.btn-container .sub{
+	background-color: rgb(216, 20, 234);
+}
+
+.btn-container .inf{
+	background-color: rgb(107, 192, 185);
+}
+
+.btn-container .com{
+	background-color: rgb(236, 255, 31);
+}
+
+.btn-container *{
+	overflow: visible;
+	padding: 2px;
+	display: flex;
+	flex: 1;
+	margin: 2px;
+	justify-content: center;
+}
+
+.btn-container *:hover{
+	box-shadow: 0px 3px rgb(47, 35, 46)
+}
+
+.btn-container .like:first-child{
+	border-bottom-left-radius: 15px;
+}
+
+.btn-container .dis:last-child{
+	border-bottom-right-radius: 15px;
+}
