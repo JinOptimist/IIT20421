@@ -8,6 +8,7 @@ h1{
   display: flex;
   flex-wrap: wrap;
   flex: 1;
+  overflow: hidden;
 }
 
 .img-box{
@@ -38,5 +39,5 @@ h1{
 }
 
 .btn-container{
-  padding: 3px;
+  padding: px;
 }

@@ -46,51 +46,40 @@
 .btn-container{
 	display: flex;
 	border-top: 1px solid;
+	overflow: hidden;
 }
 
 .btn-container .like{
-	flex: 1;
 	background-color: greenyellow;
-	margin: 2px;
-	display: flex;
-	justify-content: center;
-	overflow: hidden;
 }
 
 .btn-container .dis{
-	flex: 1;
 	background-color: rgb(228, 143, 143);
-	margin: 2px;
-	display: flex;
-	justify-content: center;
-	overflow: hidden;
 }
 
 .btn-container .sub{
-	flex: 1;
 	background-color: rgb(216, 20, 234);
-	margin: 2px;
-	display: flex;
-	justify-content: center;
-	overflow: hidden;
 }
 
 .btn-container .inf{
-	flex: 1;
 	background-color: rgb(107, 192, 185);
-	margin: 2px;
-	display: flex;
-	justify-content: center;
-	overflow: hidden;
 }
 
 .btn-container .com{
-	flex: 1;
 	background-color: rgb(236, 255, 31);
-	margin: 2px;
+}
+
+.btn-container *{
+	overflow: visible;
+	padding: 2px;
 	display: flex;
+	flex: 1;
+	margin: 2px;
 	justify-content: center;
-	overflow: hidden;
+}
+
+.btn-container *:hover{
+	box-shadow: 0px 3px rgb(47, 35, 46)
 }
 
 .btn-container .like:first-child{
