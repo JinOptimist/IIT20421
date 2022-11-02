@@ -37,11 +37,13 @@
   color: red;
 }
 .center-block .content {
-  display: flex;
-  flex-wrap: wrap;
   flex: 1;
 }
-.center-block .content .bike-container {
+.center-block .content .gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.center-block .content .gallery .bike-container {
   border: 1px rgb(30, 255, 0) solid;
   border-radius: 15px;
   width: 500px;
@@ -50,15 +52,21 @@
   flex-direction: column;
   margin: 5px;
 }
-.center-block .content .bike-container .name {
+.center-block .content .gallery .bike-container .name {
   border-bottom: 1px rgb(30, 255, 0) solid;
   font-size: 20px;
   display: flex;
   justify-content: center;
   padding: 5px;
 }
-.center-block .content .bike-container .name:hover {
+.center-block .content .gallery .bike-container .name:hover {
   background-color: aqua;
+}
+.center-block .content .page {
+  display: none;
+}
+.center-block .content .page:target {
+  display: flex;
 }
 
 .image-and-desc {
@@ -115,14 +123,11 @@
   color: rgba(185, 188, 179, 0.863);
 }
 
-.hot-key-block {
-  display: none;
-}
-
-.hot-key {
-  color: rgb(17, 212, 63);
-  background-color: aqua;
-  border: dashed red;
+.hot-key-block .hot-key {
+  color: rgb(0, 0, 0);
+  border: solid red;
+  margin: 5px;
+  font-size: 30px;
 }
 
 .main {

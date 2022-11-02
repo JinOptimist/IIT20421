@@ -1,8 +1,6 @@
 $border-bike-color: rgb(30, 255, 0);
 $bike-container-height: 350px;
 
-
-
 .header {
     font-size: 30px;
     display: flex;
@@ -16,11 +14,6 @@ $bike-container-height: 350px;
     top: 17px;
     z-index: 5;
 }
-
-
-
-
-
 
 .center-block {
     display: flex;
@@ -54,37 +47,52 @@ $bike-container-height: 350px;
     }
 
     .content {
-        display: flex;
-        flex-wrap: wrap;
         flex: 1;
 
 
-        .bike-container {
-            border: 1px $border-bike-color solid;
-            border-radius: 15px;
-            width: 500px;
-            height: $bike-container-height;
 
+        .gallery {
             display: flex;
-            flex-direction: column;
+            flex-wrap: wrap;
 
-            margin: 5px;
+            .bike-container {
+                border: 1px $border-bike-color solid;
+                border-radius: 15px;
+                width: 500px;
+                height: $bike-container-height;
 
-            .name {
-                border-bottom: 1px $border-bike-color solid;
-                font-size: 20px;
                 display: flex;
-                justify-content: center;
-                padding: 5px;
+                flex-direction: column;
 
-                &:hover {
-                    background-color: aqua;
+                margin: 5px;
+
+                .name {
+                    border-bottom: 1px $border-bike-color solid;
+                    font-size: 20px;
+                    display: flex;
+                    justify-content: center;
+                    padding: 5px;
+
+                    &:hover {
+                        background-color: aqua;
+                    }
                 }
+            }
+        }
+
+        .page {
+            display: none;
+            // background-color: blue;
+
+            &:target {
+                display: flex;
+                // background-color: chocolate;
             }
         }
 
     }
 }
+
 
 
 
@@ -146,14 +154,16 @@ $bike-container-height: 350px;
 
 
 .hot-key-block {
-    display: none;
+    // display: none;
+
+    .hot-key {
+        color: rgb(0, 0, 0);
+        border: solid red;
+        margin: 5px;
+        font-size: 30px;
+    }
 }
 
-.hot-key {
-    color: rgb(17, 212, 63);
-    background-color: aqua;
-    border: dashed red;
-}
 
 .main {
     font-size: 30px;
