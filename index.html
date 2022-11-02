@@ -27,6 +27,11 @@
                     </a>
                 </div>
                 <div class="link-container">
+                    <a href="#form" class="myButton">
+                        form
+                    </a>
+                </div>
+                <div class="link-container">
                     <a href="#table" class="myButton">
                         table
                     </a>
@@ -49,7 +54,12 @@
                 <div class="link-container">
                     <a href="https://fonts.google.com/icons" class="myButton" target="_blank">Иконки</a>
                 </div>
-
+                
+                <div class="link-container">
+                    <a href="mailto:Test@Test.com" class="myButton" target="_blank">
+                        Связаться
+                    </a>
+                </div>
             </div>
         </div>
         <div class="content">
@@ -284,6 +294,58 @@
                     ctrl + H
                 </div>
 
+            </div>
+
+            <div class="page" id="form">
+                <form>
+                    <div>
+                        <label>
+                            Имя
+                            <input type="text" placeholder="сюда вбивать имя">
+                        </label>
+                    </div>
+                    <div>
+                        <input type="number" placeholder="Как рост у пони">
+                    </div>
+                    <div>
+                        <label><input type="radio" name="sex"> Мальчик</label>
+                        <label><input type="radio" name="sex" checked="checked"> Девочка</label>
+                    </div>
+
+                    <div>
+                        <div>
+                            Какие марки тебе нравятся
+                        </div>
+                        <label><input type="checkbox" name="bike"> Hondа</label>
+                        <label><input type="checkbox" name="bike" checked="checked" disabled="disabled"> Suzuki</label>
+                        <label><input type="checkbox" name="bike"> BMW</label>
+                    </div>
+                    <div>
+                        <input type="color">
+                    </div>
+                    <div>
+                        <input type="date">
+                    </div>
+                    <div>
+                        <input type="range" min="10" max="100" step="20">
+                    </div>
+
+                    <div>
+                        <select>
+                            <optgroup label="города на M">
+                                <option>Минск</option>
+                                <option disabled="disabled">Москва</option>
+                                <option selected="selected">Могилёв</option>
+                            </optgroup>
+                            <optgroup label="города на Я">
+                                <option>Якутск</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="submit" value="Отправить" />
+                    </div>
+                </form>
             </div>
 
             <div class="page" id="table">
