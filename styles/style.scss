@@ -1,0 +1,160 @@
+$border-bike-color: rgb(30, 255, 0);
+$bike-container-height: 350px;
+
+
+
+.header {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    position: absolute;
+    left: 183px;
+    width: 105px;
+    top: 17px;
+    z-index: 5;
+}
+
+
+
+
+
+
+.center-block {
+    display: flex;
+
+
+    .menu {
+        width: 300px;
+
+        .menu-fly {
+            position: fixed;
+
+            .link-container {
+                margin: 5px;
+                display: flex;
+
+                a {
+                    width: auto;
+                    display: flex;
+                    align-items: center;
+
+                    &:hover {
+                        width: 100%;
+                    }
+
+                    &.active {
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+
+
+        .bike-container {
+            border: 1px $border-bike-color solid;
+            border-radius: 15px;
+            width: 500px;
+            height: $bike-container-height;
+
+            display: flex;
+            flex-direction: column;
+
+            margin: 5px;
+
+            .name {
+                border-bottom: 1px $border-bike-color solid;
+                font-size: 20px;
+                display: flex;
+                justify-content: center;
+                padding: 5px;
+
+                &:hover {
+                    background-color: aqua;
+                }
+            }
+        }
+
+    }
+}
+
+
+
+
+
+.image-and-desc {
+    display: flex;
+    flex: 1;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    border-right: 1px $border-bike-color solid;
+}
+
+.image-container img {
+    max-width: 250px;
+    max-height: calc($bike-container-height - 35px - 25px);
+}
+
+.additional-container {
+    display: flex;
+    border-top: 1px $border-bike-color solid;
+}
+
+.additional-container .action {
+    flex: 1;
+    background-color: pink;
+    margin: 1px;
+    display: flex;
+    justify-content: center;
+}
+
+.additional-container .action:first-child {
+    border-bottom-left-radius: 15px;
+    background-color: aqua;
+}
+
+.additional-container .action:last-child {
+    border-bottom-right-radius: 15px;
+    background-color: aqua;
+}
+
+.desc {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.footer {
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    color: rgba(185, 188, 179, 0.863);
+}
+
+
+.hot-key-block {
+    display: none;
+}
+
+.hot-key {
+    color: rgb(17, 212, 63);
+    background-color: aqua;
+    border: dashed red;
+}
+
+.main {
+    font-size: 30px;
+}

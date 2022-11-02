@@ -1,138 +1,130 @@
 .header {
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
 }
 
-.logo{
-    position: absolute;
-    left: 183px;
-    width: 105px;
-    top: 17px;
-    z-index: 5;
-}
-
-.menu {
-    width: 300px;
-}
-
-.menu-fly{
-    position: fixed;
-}
-
-.link-container {
-    margin: 5px;
-    display: flex;
-}
-
-.link-container a {
-    width: auto;
-    display: flex;
-    align-items: center;
-}
-
-.link-container a:hover {
-    width: 100%;
+.logo {
+  position: absolute;
+  left: 183px;
+  width: 105px;
+  top: 17px;
+  z-index: 5;
 }
 
 .center-block {
-    display: flex;
+  display: flex;
 }
-
-.content {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1;
+.center-block .menu {
+  width: 300px;
 }
-
-.bike-container {
-    border: 1px red solid;
-    border-radius: 15px;
-    width: 500px;
-    height: 300px;
-
-    display: flex;
-    flex-direction: column;
-
-    margin: 5px;
+.center-block .menu .menu-fly {
+  position: fixed;
 }
-
-.bike-container .name {
-    border-bottom: 1px red solid;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    padding: 5px;
+.center-block .menu .menu-fly .link-container {
+  margin: 5px;
+  display: flex;
 }
-
-.bike-container .name:hover {
-    background-color: aqua;
+.center-block .menu .menu-fly .link-container a {
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+.center-block .menu .menu-fly .link-container a:hover {
+  width: 100%;
+}
+.center-block .menu .menu-fly .link-container a.active {
+  color: red;
+}
+.center-block .content {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+}
+.center-block .content .bike-container {
+  border: 1px rgb(30, 255, 0) solid;
+  border-radius: 15px;
+  width: 500px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+.center-block .content .bike-container .name {
+  border-bottom: 1px rgb(30, 255, 0) solid;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+.center-block .content .bike-container .name:hover {
+  background-color: aqua;
 }
 
 .image-and-desc {
-    display: flex;
-    flex: 1;
+  display: flex;
+  flex: 1;
 }
 
 .image-container {
-    display: flex;
-    align-items: center;
-    border-right: 1px red solid;
+  display: flex;
+  align-items: center;
+  border-right: 1px rgb(30, 255, 0) solid;
 }
 
 .image-container img {
-    max-width: 250px;
-    max-height: calc(300px - 35px - 25px);
+  max-width: 250px;
+  max-height: 290px;
 }
 
 .additional-container {
-    display: flex;
-    border-top: 1px red solid;
+  display: flex;
+  border-top: 1px rgb(30, 255, 0) solid;
 }
 
 .additional-container .action {
-    flex: 1;
-    background-color: pink;
-    margin: 1px;
-    display: flex;
-    justify-content: center;
+  flex: 1;
+  background-color: pink;
+  margin: 1px;
+  display: flex;
+  justify-content: center;
 }
 
-.additional-container .action:first-child{
-    border-bottom-left-radius: 15px;
-    background-color: aqua;
+.additional-container .action:first-child {
+  border-bottom-left-radius: 15px;
+  background-color: aqua;
 }
-.additional-container .action:last-child{
-    border-bottom-right-radius: 15px;
-    background-color: aqua;
+
+.additional-container .action:last-child {
+  border-bottom-right-radius: 15px;
+  background-color: aqua;
 }
 
 .desc {
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
 }
 
 .footer {
-    font-size: 10px;
-    display: flex;
-    justify-content: center;
-    color: rgba(185, 188, 179, 0.863);
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  color: rgba(185, 188, 179, 0.863);
 }
 
-
 .hot-key-block {
-    display: none;
+  display: none;
 }
 
 .hot-key {
-    color: rgb(17, 212, 63);
-    background-color: aqua;
-    border: dashed red;
+  color: rgb(17, 212, 63);
+  background-color: aqua;
+  border: dashed red;
 }
 
 .main {
-    font-size: 30px;
-}
+  font-size: 30px;
+}/*# sourceMappingURL=style.css.map */
