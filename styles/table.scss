@@ -1,0 +1,28 @@
+@import 'variable.scss';
+
+table {
+    width: 100%;
+
+    thead th {
+        font-size: 20px;
+    }
+
+    tbody {
+
+        td {
+            border: 1px red solid;
+        }
+
+        tr:nth-child(2n) {
+            background: $secondary-background-color;
+        }
+
+        td:nth-child(3n + 2) {
+            color: red;
+        }
+
+        tr:hover {
+            background: $primary-background-color;
+        }
+    }
+}

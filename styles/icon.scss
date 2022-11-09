@@ -1,0 +1,19 @@
+$icons: 'coffee', 'sad', 'download', 'feedback';
+
+.icon::before {
+    content: ' ';
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-size: contain;
+}
+
+@each $icon in $icons{
+    .#{$icon}::before {
+        background-image: url(../images/icon/#{$icon}.png);
+    }
+    
+    .#{$icon}:hover::before {
+        background-image: url(../images/icon/#{$icon}_hover.png);
+    }
+}

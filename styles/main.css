@@ -1,0 +1,135 @@
+.header {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  position: absolute;
+  left: 183px;
+  width: 105px;
+  top: 17px;
+  z-index: 5;
+}
+
+.center-block {
+  display: flex;
+}
+.center-block .menu {
+  width: 300px;
+}
+.center-block .menu .menu-fly {
+  position: fixed;
+}
+.center-block .menu .menu-fly .link-container {
+  margin: 5px;
+  display: flex;
+}
+.center-block .menu .menu-fly .link-container a {
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+.center-block .menu .menu-fly .link-container a:hover {
+  width: 100%;
+}
+.center-block .menu .menu-fly .link-container a.active {
+  color: red;
+}
+.center-block .content {
+  flex: 1;
+}
+.center-block .content .gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.center-block .content .gallery .bike-container {
+  border: 1px rgb(159, 0, 71) solid;
+  border-radius: 15px;
+  width: 500px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+.center-block .content .gallery .bike-container .name {
+  border-bottom: 1px rgb(159, 0, 71) solid;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+.center-block .content .gallery .bike-container .name:hover {
+  background-color: aqua;
+}
+.center-block .content .page {
+  display: none;
+}
+.center-block .content .page:target {
+  display: flex;
+}
+
+.image-and-desc {
+  display: flex;
+  flex: 1;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  border-right: 1px rgb(159, 0, 71) solid;
+}
+
+.image-container img {
+  max-width: 250px;
+  max-height: 140px;
+}
+
+.additional-container {
+  display: flex;
+  border-top: 1px rgb(159, 0, 71) solid;
+}
+
+.additional-container .action {
+  flex: 1;
+  background-color: pink;
+  margin: 1px;
+  display: flex;
+  justify-content: center;
+}
+
+.additional-container .action:first-child {
+  border-bottom-left-radius: 15px;
+  background-color: aqua;
+}
+
+.additional-container .action:last-child {
+  border-bottom-right-radius: 15px;
+  background-color: aqua;
+}
+
+.desc {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.footer {
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  color: rgba(185, 188, 179, 0.863);
+}
+
+.hot-key-block .hot-key {
+  color: rgb(0, 0, 0);
+  border: solid red;
+  margin: 5px;
+  font-size: 30px;
+}
+
+.main {
+  font-size: 30px;
+}/*# sourceMappingURL=main.css.map */

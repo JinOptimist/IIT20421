@@ -1,0 +1,71 @@
+@import 'reset.css';
+.icon::before {
+  content: " ";
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-size: contain;
+}
+
+.coffee::before {
+  background-image: url(../images/icon/coffee.png);
+}
+
+.coffee:hover::before {
+  background-image: url(../images/icon/coffee_hover.png);
+}
+
+.sad::before {
+  background-image: url(../images/icon/sad.png);
+}
+
+.sad:hover::before {
+  background-image: url(../images/icon/sad_hover.png);
+}
+
+.download::before {
+  background-image: url(../images/icon/download.png);
+}
+
+.download:hover::before {
+  background-image: url(../images/icon/download_hover.png);
+}
+
+.feedback::before {
+  background-image: url(../images/icon/feedback.png);
+}
+
+.feedback:hover::before {
+  background-image: url(../images/icon/feedback_hover.png);
+}
+
+.myButton {
+  box-shadow: 0px 1px 0px 0px #f0f7fa;
+  background: linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+  background-color: #33bdef;
+  border-radius: 6px;
+  border: 1px solid rgb(159, 0, 71);
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px -1px 0px #5b6178;
+  width: 100%;
+}
+
+.myButton:hover {
+  background: linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+  background-color: #019ad2;
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+body {
+  background-color: aqua;
+}/*# sourceMappingURL=registration.css.map */

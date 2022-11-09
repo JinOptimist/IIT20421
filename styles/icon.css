@@ -1,24 +1,39 @@
-
 .icon::before {
-    content: ' ';
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    background-size: contain;
+  content: " ";
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-size: contain;
 }
 
 .coffee::before {
-    background-image: url(../images/icon/outline_coffee_black_24dp.png);
+  background-image: url(../images/icon/coffee.png);
 }
 
 .coffee:hover::before {
-    background-image: url(../images/icon/baseline_coffee_black_24dp\ filled.png);
+  background-image: url(../images/icon/coffee_hover.png);
 }
 
 .sad::before {
-    background-image: url(../images/icon/outline_sentiment_dissatisfied_black_24dp.png);
+  background-image: url(../images/icon/sad.png);
 }
 
 .sad:hover::before {
-    background-image: url(../images/icon/baseline_sentiment_dissatisfied_black_24dp.png);
+  background-image: url(../images/icon/sad_hover.png);
 }
+
+.download::before {
+  background-image: url(../images/icon/download.png);
+}
+
+.download:hover::before {
+  background-image: url(../images/icon/download_hover.png);
+}
+
+.feedback::before {
+  background-image: url(../images/icon/feedback.png);
+}
+
+.feedback:hover::before {
+  background-image: url(../images/icon/feedback_hover.png);
+}/*# sourceMappingURL=icon.css.map */

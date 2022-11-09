@@ -1,0 +1,18 @@
+table {
+  width: 100%;
+}
+table thead th {
+  font-size: 20px;
+}
+table tbody td {
+  border: 1px red solid;
+}
+table tbody tr:nth-child(2n) {
+  background: rgba(162, 27, 27, 0.12);
+}
+table tbody td:nth-child(3n+2) {
+  color: red;
+}
+table tbody tr:hover {
+  background: #ccc;
+}/*# sourceMappingURL=table.css.map */
