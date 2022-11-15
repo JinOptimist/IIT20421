@@ -41,3 +41,10 @@ h1{
 .btn-container{
   padding: px;
 }
+
+.page {
+  display: none;
+  }
+.page:target {
+  display: flex;
+}
