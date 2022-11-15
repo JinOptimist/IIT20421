@@ -36,15 +36,29 @@ h1{
 
 .center-block{
   display: flex;
+  flex: 1;
 }
 
-.btn-container{
-  padding: px;
+.content-block{
+  display: flex;
+  flex: 1;
 }
+
 
 .page {
   display: none;
   }
 .page:target {
   display: flex;
+}
+
+.form{
+  background-color:rgba(99, 66, 23, 0.144)
+}
+
+.footer{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  margin-top: 50px;
 }
