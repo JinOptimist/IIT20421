@@ -7,11 +7,7 @@
 }
 
 .logo {
-    position: absolute;
-    left: 183px;
-    width: 105px;
-    top: 17px;
-    z-index: 5;
+    max-height: 50px;
 }
 
 .center-block {
@@ -24,12 +20,33 @@
         .menu-fly {
             position: fixed;
 
+            .menu-group {
+                .links-wrap {
+                    display: none;
+                    position: fixed;
+
+                    .links{
+                        background-color: wheat;
+                        position: relative;
+                        left: $menu-link-width;
+                    }
+                }
+
+                &:hover {
+                    .links-wrap {
+                        display: block;
+                    }
+                }
+
+            }
+
+
             .link-container {
                 margin: 5px;
                 display: flex;
+                width: $menu-link-width;
 
                 a {
-                    width: auto;
                     display: flex;
                     align-items: center;
 
@@ -77,6 +94,55 @@
             }
         }
 
+        .hot-key-block-wrap {
+            flex: 1;
+
+            .hot-key-block {
+                display: flex;
+                border-bottom: 1px $secondary-background-color solid;
+
+                &:hover {
+                    background-color: $primary-background-color;
+                }
+
+                .desc {
+                    justify-content: start;
+                }
+
+                .hot-key {
+                    color: $highlight-color;
+                    margin: 5px;
+                    font-size: 30px;
+                    width: 200px;
+                }
+
+                .tags {
+                    display: flex;
+
+                    .tag {
+                        border: 5px solid;
+                        border-radius: 17px;
+                        padding: 5px;
+                        display: flex;
+                        align-items: center;
+                        font-weight: bold;
+
+                        &.vsc {
+                            border-color: aquamarine;
+                        }
+
+                        &.chrome {
+                            border-color: rgb(24, 2, 220);
+                        }
+
+                        &.windows {
+                            border-color: rgb(195, 110, 5);
+                        }
+                    }
+                }
+            }
+        }
+
         .page {
             display: none;
             // background-color: blue;
@@ -103,7 +169,9 @@
 .image-container {
     display: flex;
     align-items: center;
+    justify-content: center;
     border-right: 1px $border-bike-color solid;
+    flex: 1;
 }
 
 .image-container img {
@@ -150,16 +218,6 @@
 }
 
 
-.hot-key-block {
-    // display: none;
-
-    .hot-key {
-        color: rgb(0, 0, 0);
-        border: solid red;
-        margin: 5px;
-        font-size: 30px;
-    }
-}
 
 
 .main {

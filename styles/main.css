@@ -5,11 +5,7 @@
 }
 
 .logo {
-  position: absolute;
-  left: 183px;
-  width: 105px;
-  top: 17px;
-  z-index: 5;
+  max-height: 50px;
 }
 
 .center-block {
@@ -21,12 +17,24 @@
 .center-block .menu .menu-fly {
   position: fixed;
 }
+.center-block .menu .menu-fly .menu-group .links-wrap {
+  display: none;
+  position: fixed;
+}
+.center-block .menu .menu-fly .menu-group .links-wrap .links {
+  background-color: wheat;
+  position: relative;
+  left: 230px;
+}
+.center-block .menu .menu-fly .menu-group:hover .links-wrap {
+  display: block;
+}
 .center-block .menu .menu-fly .link-container {
   margin: 5px;
   display: flex;
+  width: 230px;
 }
 .center-block .menu .menu-fly .link-container a {
-  width: auto;
   display: flex;
   align-items: center;
 }
@@ -62,6 +70,45 @@
 .center-block .content .gallery .bike-container .name:hover {
   background-color: aqua;
 }
+.center-block .content .hot-key-block-wrap {
+  flex: 1;
+}
+.center-block .content .hot-key-block-wrap .hot-key-block {
+  display: flex;
+  border-bottom: 1px rgba(162, 27, 27, 0.12) solid;
+}
+.center-block .content .hot-key-block-wrap .hot-key-block:hover {
+  background-color: #ccc;
+}
+.center-block .content .hot-key-block-wrap .hot-key-block .desc {
+  justify-content: start;
+}
+.center-block .content .hot-key-block-wrap .hot-key-block .hot-key {
+  color: red;
+  margin: 5px;
+  font-size: 30px;
+  width: 200px;
+}
+.center-block .content .hot-key-block-wrap .hot-key-block .tags {
+  display: flex;
+}
+.center-block .content .hot-key-block-wrap .hot-key-block .tags .tag {
+  border: 5px solid;
+  border-radius: 17px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.center-block .content .hot-key-block-wrap .hot-key-block .tags .tag.vsc {
+  border-color: aquamarine;
+}
+.center-block .content .hot-key-block-wrap .hot-key-block .tags .tag.chrome {
+  border-color: rgb(24, 2, 220);
+}
+.center-block .content .hot-key-block-wrap .hot-key-block .tags .tag.windows {
+  border-color: rgb(195, 110, 5);
+}
 .center-block .content .page {
   display: none;
 }
@@ -77,7 +124,9 @@
 .image-container {
   display: flex;
   align-items: center;
+  justify-content: center;
   border-right: 1px rgb(159, 0, 71) solid;
+  flex: 1;
 }
 
 .image-container img {
@@ -121,13 +170,6 @@
   display: flex;
   justify-content: center;
   color: rgba(185, 188, 179, 0.863);
-}
-
-.hot-key-block .hot-key {
-  color: rgb(0, 0, 0);
-  border: solid red;
-  margin: 5px;
-  font-size: 30px;
 }
 
 .main {
