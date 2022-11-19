@@ -12,12 +12,13 @@
 	padding:6px 24px;
 	text-decoration:none;
 	text-shadow:0px -1px 0px #5b6178;
-    width: 100%;
+  width: 100%;
 }
 .button:hover {
 	background:linear-gradient(to bottom, #33ab73 5%, #6a11a6 100%);
 	background-color:#294752;
 }
+
 .button:active {
 	position:relative;
 	top:1px;
@@ -32,6 +33,7 @@
   width: auto;
   display: flex;
   align-items: center;
+	width: 100%;
 }
 
 .menu{
@@ -46,7 +48,8 @@
 .btn-container{
 	display: flex;
 	border-top: 1px solid;
-	overflow: hidden;
+	overflow:hidden;
+	padding: 2px;
 }
 
 .btn-container .like{
@@ -79,7 +82,7 @@
 }
 
 .btn-container *:hover{
-	box-shadow: 0px 3px rgb(47, 35, 46)
+	box-shadow: 3px 3px rgb(47, 35, 46)
 }
 
 .btn-container .like:first-child{

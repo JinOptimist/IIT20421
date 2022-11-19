@@ -1,23 +1,37 @@
-h1{
-  display: flex;
-  justify-content: center;
-  border-bottom: solid 1px
+html {
+  overflow-y: scroll;
 }
 
-.div-container{
+.title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-bottom: solid 1px;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  opacity: 0.95;
+}
+
+.div-container {
   display: flex;
   flex-wrap: wrap;
   flex: 1;
   overflow: hidden;
 }
 
-.img-box{
+.img-box {
   margin: 5px;
   border: solid 3px purple;
-  border-radius: 10%
+  border-radius: 10%;
 }
 
-.name{
+img:hover {
+  transform: scale(1.2);
+}
+
+.name {
   display: flex;
   justify-content: center;
   font-size: 25px;
@@ -27,38 +41,49 @@ h1{
   padding: 5px;
 }
 
-.description{
+.description {
   display: flex;
   font-size: 15px;
   border-top: 3px red dotted;
   padding: 5px;
 }
 
-.center-block{
+.center-block {
+  display: flex;
+  flex: 1;
+  top: 80px;
+  margin-top: 80px;
+}
+
+.content-block {
   display: flex;
   flex: 1;
 }
-
-.content-block{
-  display: flex;
-  flex: 1;
-}
-
 
 .page {
   display: none;
-  }
+}
 .page:target {
   display: flex;
 }
 
-.form{
-  background-color:rgba(99, 66, 23, 0.144)
+#gallery {
+  margin-top: -80px;
+  padding-top: 80px;
 }
 
-.footer{
+#form {
+  margin-top: -80px;
+  padding-top: 80px;
+}
+
+.form {
+  border-top: firebrick;
+}
+
+.footer {
   display: flex;
-  flex: 1;
   justify-content: center;
+  align-items: flex-end;
   margin-top: 50px;
 }
