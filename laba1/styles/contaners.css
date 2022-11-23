@@ -60,11 +60,15 @@ img:hover {
   flex: 1;
 }
 
-.page {
+.page:not(:last-of-type) {
   display: none;
 }
 .page:target {
   display: flex;
+}
+
+.page:target ~ .page:last-of-type {
+  display: none;
 }
 
 #gallery {
@@ -75,10 +79,6 @@ img:hover {
 #form {
   margin-top: -80px;
   padding-top: 80px;
-}
-
-.form {
-  border-top: firebrick;
 }
 
 .footer {
