@@ -9,7 +9,7 @@
     <link href="styles/contaners.css" rel="stylesheet" />
     <link href="styles/buttons.css" rel="stylesheet" />
     <link href="styles/icons.css" rel="stylesheet" />
-    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form.css" />
   </head>
   <body>
     <div class="title">
@@ -22,28 +22,57 @@
             <a href="#gallery" class="button">Gallery</a>
           </div>
           <div class="link-container">
-            <a
-              href="http://htmlbook.ru/css/border-bottom-style"
-              class="button icon border"
-              >border propety</a
-            >
-          </div>
-          <div class="link-container">
-            <a href="https://developer.mozilla.org/ru/" class="button icon mdn"
-              >MDN</a
-            >
-          </div>
-          <div class="link-container">
-            <a
-              href="https://www.w3schools.com/css/css_text.asp"
-              class="button icon school"
-              >w3schools</a
-            >
-          </div>
-          <div class="link-container">
-            <a href="https://html5book.ru/html-tags/" class="button icon book"
-              >HTML5book</a
-            >
+            <div class="link-group">
+              <button class="button">Links</button>
+              <div class="group-wrap">
+                <div class="wrap-fixed">
+                  <div class="link-container more-links">
+                    <div class="link-container">
+                      <a class="button">More</a>
+                    </div>
+                    <div class="more-links">
+                      <div class="more-links-wrap">
+                        <div class="link-container">
+                          <a
+                            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                            class="button"
+                            >YouTube</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="link-container">
+                    <a
+                      href="http://htmlbook.ru/css/border-bottom-style"
+                      class="button icon border"
+                      >border propety</a
+                    >
+                  </div>
+                  <div class="link-container">
+                    <a
+                      href="https://developer.mozilla.org/ru/"
+                      class="button icon mdn"
+                      >MDN</a
+                    >
+                  </div>
+                  <div class="link-container">
+                    <a
+                      href="https://www.w3schools.com/css/css_text.asp"
+                      class="button icon school"
+                      >w3schools</a
+                    >
+                  </div>
+                  <div class="link-container">
+                    <a
+                      href="https://html5book.ru/html-tags/"
+                      class="button icon book"
+                      >HTML5book</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="link-container">
             <a href="#form" class="button">Add character</a>
@@ -96,7 +125,7 @@
             </div>
             <div class="spec">
               <label
-              >Choose spec for your character:<br />
+                >Choose spec for your character:<br />
                 <select name="spec" id="spec">
                   <option value="fire">Fire</option>
                   <option value="earth">Earth</option>
