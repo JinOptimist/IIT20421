@@ -58,7 +58,7 @@ html {
 .content-block {
   display: flex;
   flex: 1;
-  margin: 10px;
+  margin-left: 10px;
 }
 
 .page:not(:last-of-type) {
