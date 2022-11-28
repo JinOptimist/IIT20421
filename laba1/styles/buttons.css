@@ -82,7 +82,13 @@
 }
 
 .btn-container *:hover{
-	box-shadow: 3px 3px rgb(47, 35, 46)
+	box-shadow: 3px 3px rgb(47, 35, 46);
+	cursor: pointer;
+}
+
+.btn-container *:active{
+	position: relative;
+	top: 1px;
 }
 
 .btn-container .like:first-child{

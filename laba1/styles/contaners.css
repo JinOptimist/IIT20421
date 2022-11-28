@@ -27,7 +27,7 @@ html {
   border-radius: 10%;
 }
 
-img:hover {
+.img-box img:hover {
   transform: scale(1.2);
 }
 
@@ -58,6 +58,7 @@ img:hover {
 .content-block {
   display: flex;
   flex: 1;
+  margin: 10px;
 }
 
 .page:not(:last-of-type) {

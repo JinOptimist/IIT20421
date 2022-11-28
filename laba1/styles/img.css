@@ -1,9 +1,19 @@
-img{
+.img-box img{
   height: 100px;
   width: 150px;
 }
 
-.img{
+.img-box .img{
   display: flex;
   justify-content: center;
+}
+
+.logo{
+  position: fixed;
+  z-index: 100;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  top: 10px;
+  left: 10px;
 }
