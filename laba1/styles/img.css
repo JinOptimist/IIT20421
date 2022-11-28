@@ -17,3 +17,7 @@
   top: 10px;
   left: 10px;
 }
+
+.logo:hover{
+  opacity: 0.9;
+}
