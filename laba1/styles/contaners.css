@@ -101,6 +101,14 @@ div .full-text-box .full-box{
   padding-top: 80px;
 }
 
+#media{
+  margin-top: -80px;
+  padding-top: 80px;
+}
+.player{
+  margin: 50px;
+}
+
 .footer {
   display: flex;
   justify-content: center;
