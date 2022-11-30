@@ -21,16 +21,6 @@ html {
   overflow: hidden;
 }
 
-.img-box {
-  margin: 5px;
-  border: solid 3px purple;
-  border-radius: 10%;
-}
-
-.img-box img:hover {
-  transform: scale(1.2);
-}
-
 .name {
   display: flex;
   justify-content: center;
@@ -41,11 +31,40 @@ html {
   padding: 5px;
 }
 
+.box-xl{
+  width: 556px;
+}
+
+.box-xxl{
+  width: 834px;
+}
+
+div .full-text-box .full-box{
+  height: 255px;
+}
+
+.text-img-wrap{
+  display: flex;
+}
+
+.text-img-wrap .text{
+  flex: 1;
+}
+
+.text-img-wrap .img{
+  flex: 2;
+}
+
+.text-img-wrap .img img{
+  flex: 1;
+}
+
 .description {
   display: flex;
   font-size: 15px;
   border-top: 3px red dotted;
   padding: 5px;
+  justify-content: center;
 }
 
 .center-block {
