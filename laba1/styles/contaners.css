@@ -105,6 +105,11 @@ div .full-text-box .full-box{
   margin-top: -80px;
   padding-top: 80px;
 }
+
+iframe{
+  border-radius: 10px;
+}
+
 .player{
   margin: 50px;
 }

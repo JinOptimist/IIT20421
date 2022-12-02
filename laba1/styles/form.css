@@ -1,3 +1,26 @@
-.form{
-  
+form{
+  max-width: 900px;
+  background-color: rgba(187, 180, 168, 0.202);
+  display: inherit;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: center;
+}
+
+form *{
+  margin: 0px 5px 10px 5px;
+}
+
+.add-char{
+  flex-direction: column;
+  flex: 1;
+}
+
+.form-wrap{
+  display: inherit;
+}
+
+.submit{
+  display: inherit;
+  width: 300px;
 }
