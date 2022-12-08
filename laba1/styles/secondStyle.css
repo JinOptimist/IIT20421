@@ -1,0 +1,97 @@
+html{
+  background-color: purple;
+}
+
+body{
+  margin: 0px;
+}
+
+.headder{
+  display: flex;
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  height: 5rem;
+}
+
+.headder .tab-container{
+  display: inherit;
+  flex: 1;
+}
+
+.tab{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.main-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.red{
+  background-color: red
+}
+
+.yellow{
+  background-color: yellow;
+}
+
+.blue{
+  background-color: blue;
+}
+
+.green{
+  background-color: green;
+}
+
+a{
+  font-family: Arial;
+  color: black;
+  font-weight: bold;
+}
+
+#box-red{
+  background-color:red;
+}
+
+#box-yellow{
+  background-color: yellow;
+}
+
+#box-blue{
+
+  background-color: blue;
+}
+
+#box-green{
+  background-color: green;
+}
+
+.box{
+  display: none;
+  margin: 5rem 0rem 0rem 0rem;
+  font-style: italic;
+  text-decoration: underline;
+  text-align: justify;
+}
+
+.box:target{
+  display: flex;
+  padding: 50px;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+  margin: -9.25px 0 0 0;
+}

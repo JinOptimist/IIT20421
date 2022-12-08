@@ -31,14 +31,19 @@
               <button class="button">Links</button>
               <div class="group-wrap">
                 <div class="wrap-fixed">
-                  <div class="link-container more-links">
-                    <div class="link-container">
-                      <a class="button">More</a>
-                    </div>
+                  <div class="link-container">
                     <div class="more-links">
-                      <div class="more-links-wrap">
-                        <div class="link-container">
-                          <a href="#media" class="button">YouTube</a>
+                      <div class="link-container">
+                        <a class="button">More</a>
+                      </div>
+                      <div class="more-links-absolute">
+                        <div class="more-links-wrap">
+                          <div class="link-container">
+                            <a href="#media" class="button">YouTube</a>
+                          </div>
+                          <div class="link-container">
+                            <a href="second.html#box-red" class="button">Second Page</a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -82,30 +87,43 @@
       </div>
       <div class="content-block">
         <div class="form page div-container" id="form">
-          <form action="add-char">
+          <form action="#" method="post" enctype="multipart/form-data">
             <div class="form-wrap">
               <div class="main section">
-                <label> ADD CHARACTER</label>
+                <label>ADD CHARACTER</label>
                 <div class="name-char">
                   <label
                     >Name:<br />
-                    <input type="text" placeholder="First-Name" />
-                    <input type="text" placeholder="Last-Name" /> </label
+                    <input tabindex="1" type="text" placeholder="First-Name" />
+                    <input
+                      tabindex="2"
+                      type="text"
+                      placeholder="Last-Name"
+                    /> </label
                   ><br />
                 </div>
                 <div class="photo">
                   <label>Photo: </label>
-                  <input type="file" />
+                  <input tabindex="3" type="file" />
                 </div>
                 <div class="sex">
-                  <label>Sex: </label>
-                  <label><input type="radio" name="sex" />Male</label>
-                  <label><input type="radio" name="sex" />Female</label>
+                  <label>Sex:</label>
+                  <label
+                    ><input
+                      tabindex="4"
+                      checked
+                      type="radio"
+                      name="sex"
+                    />Male</label
+                  >
+                  <label
+                    ><input tabindex="5" type="radio" name="sex" />Female</label
+                  >
                 </div>
                 <div class="age">
                   <label
                     >Age:
-                    <input type="number" min="1" max="120" />
+                    <input tabindex="6" type="number" min="1" max="120" />
                   </label>
                 </div>
               </div>
@@ -114,8 +132,9 @@
                   <label
                     >Discription:<br />
                     <textarea
-                      rows="10"
-                      cols="40"
+                      tabindex="7"
+                      rows="3"
+                      cols="20"
                       placeholder="What about you character?"
                     ></textarea>
                   </label>
@@ -123,32 +142,33 @@
                 <div class="hair">
                   <label
                     >Hair color:<br />
-                    <input type="color" />
+                    <input tabindex="8" type="color" />
                   </label>
                 </div>
                 <div class="spec">
                   <label
                     >Choose spec for your character:<br />
-                    <select name="spec" id="spec">
+                    <select tabindex="9" name="spec" id="spec">
                       <option value="fire">Fire</option>
-                      <option value="earth">Earth</option>
+                      <option value="earth" selected>Earth</option>
                       <option value="water">Water</option>
                       <option value="air" disabled>Air</option>
                     </select>
                   </label>
                 </div>
                 <div class="param">
+                  <label>Strengths your character:<br /></label>
+                  <label>Strength<input tabindex="10" type="checkbox" /></label>
+                  <label>Stamina<input tabindex="11" type="checkbox" /></label>
+                  <label>Agility<input tabindex="12" type="checkbox" /></label>
                   <label
-                    >Strengths your character:<br />
-                    <label>Stamina</label><input type="checkbox" />
-                    <label>Agility</label><input type="checkbox" />
-                    <label>Intelligence</label><input type="checkbox" />
-                  </label>
+                    >Intelligence<input tabindex="13" type="checkbox"
+                  /></label>
                 </div>
               </div>
             </div>
             <div class="submit">
-              <input type="submit" class="button" />
+              <input tabindex="14" type="submit" class="button" />
             </div>
           </form>
         </div>

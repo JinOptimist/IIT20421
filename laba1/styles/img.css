@@ -23,13 +23,13 @@
 
 .img-box .img{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items:center;
   height: 165px;
 }
 
 .img-box img{
-  max-height: 150px;
+  height: 150px;
   max-width: 225px;
 }
 
@@ -47,9 +47,4 @@
 
 p{
   margin: 0px;
-}
-
-.multi-img img{
-  margin: 1px;
-  flex: 1;
 }

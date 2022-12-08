@@ -12,6 +12,7 @@ html {
   top: 0;
   left: 0;
   opacity: 0.95;
+  box-shadow: 1px 1px 10px #000;
 }
 
 .div-container {
@@ -26,7 +27,7 @@ html {
   justify-content: center;
   font-size: 25px;
   color: red;
-  border-bottom: 3px red dotted;
+  border-bottom: 3px red dashed;
   font-style: italic;
   padding: 5px;
 }
@@ -62,7 +63,7 @@ div .full-text-box .full-box{
 .description {
   display: flex;
   font-size: 15px;
-  border-top: 3px red dotted;
+  border-top: 3px red dashed;
   padding: 5px;
   justify-content: center;
 }
@@ -83,6 +84,7 @@ div .full-text-box .full-box{
 .page:not(:last-of-type) {
   display: none;
 }
+
 .page:target {
   display: flex;
 }
