@@ -1,6 +1,6 @@
 .logo{
   position: fixed;
-  z-index: 100;
+  z-index: 200;
   width: 50px;
   height: 50px;
   margin: 5px;
@@ -10,15 +10,6 @@
 
 .logo:hover{
   opacity: 0.9;
-}
-
-.img-box {
-  margin: 5px;
-  border: solid 3px purple;
-  border-radius: 7%;
-  width: 270px;
-  height: 270px;
-  overflow: hidden;
 }
 
 .img-box .img{
@@ -35,6 +26,7 @@
 
 .img-box img:hover {
   transform: scale(1.2);
+  z-index: 1;
 }
 
 .img-box .text{

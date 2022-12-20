@@ -43,6 +43,7 @@
 	position: fixed;
   border-right: 2px solid;
 	width: 200px;
+	z-index: 20;
 }
 
 .btn-container{

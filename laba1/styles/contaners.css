@@ -13,6 +13,7 @@ html {
   left: 0;
   opacity: 0.95;
   box-shadow: 1px 1px 10px #000;
+  z-index: 100;
 }
 
 .div-container {
@@ -32,12 +33,24 @@ html {
   padding: 5px;
 }
 
+.img-box {
+  margin: 5px;
+  border: solid 3px purple;
+  border-radius: 7%;
+  width: 270px;
+  overflow: hidden;
+}
+
 .box-xl{
+  display: flex;
+  flex-direction: column;
   width: 556px;
 }
 
 .box-xxl{
-  width: 834px;
+  display: flex;
+  flex-direction: column;
+  width: 842px;
 }
 
 div .full-text-box .full-box{
