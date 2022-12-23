@@ -39,6 +39,7 @@ html {
   border-radius: 7%;
   width: 270px;
   overflow: hidden;
+  background: linear-gradient(rgba(128, 0, 128, 0.473), transparent);
 }
 
 .box-xl{
@@ -50,7 +51,8 @@ html {
 .box-xxl{
   display: flex;
   flex-direction: column;
-  width: 842px;
+  max-width: 842px;
+  flex: 1 1 842px;
 }
 
 div .full-text-box .full-box{

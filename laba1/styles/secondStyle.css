@@ -62,19 +62,23 @@ a{
 
 #box-red{
   background-color:red;
+  background: linear-gradient(red, transparent);
 }
 
 #box-yellow{
   background-color: yellow;
+  background: linear-gradient(yellow, transparent);
 }
 
 #box-blue{
 
   background-color: blue;
+  background: linear-gradient(blue, transparent);
 }
 
 #box-green{
   background-color: green;
+  background: linear-gradient(green, transparent);
 }
 
 .box{
