@@ -1,0 +1,20 @@
+.red {
+    color: red;
+}
+
+.password .data{
+    display: none;
+}
+
+.password.active .data{
+    display: block;
+}
+
+
+.password .cover{
+    display: block;
+}
+
+.password.active .cover{
+    display: none;
+}
