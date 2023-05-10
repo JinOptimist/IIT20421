@@ -5,11 +5,11 @@ let isAdult = true;
 let user = {
     name: 'Olga',
     age: 20,
-    isWhoman: true
+    isWoman: true
 };
 user.defaultGreetings = `My name: ${user.name}. I'm ${user.age} old`;
 
-user.isWhoman = true;
+user.isWoman = true;
 
 //console.log(user);
 
@@ -17,11 +17,11 @@ let studentsNames = [1, 3, 54, 5];
 
 studentsNames[1] = -9;
 
-const create = function (name, age, isWhoman) {
+const create = function (name, age, isWoman) {
     let user = {
         name: 'Ivan',
         age: 30,
-        isWhoman: false
+        isWoman: false
     };
     user.defaultGreetings = `My name: ${user.name}. I'm ${user.age} old`;
     return user;
@@ -30,14 +30,16 @@ const create = function (name, age, isWhoman) {
 var ivan = create('Ivan', 20, false);
 var olga = create('Olga', 12, true);
 
-const availableNames = ['Olga', 'Pasha', 'Lera', 'Ira', 'Emanuil'];
+const womanNames = ['Olga', 'Lera', 'Ira'];
+const manNames = ['Pasha', 'Emanuil', 'Ivan'];
 
 function generateUser() {
     let user = {};
 
     user.age = getRandomNumber(18, 50);
-    user.name = getRandomName();
-    user.isWhoman = getRandoBool();
+    user.isWoman = getRandoBool();
+    user.name = getRandomName(user.isWoman);
+
 
     return user;
 }
@@ -46,9 +48,12 @@ function getRandomNumber(min, max) {
     return Math.floor(Math.random() * max) + min;
 }
 
-function getRandomName() {
-    const lastIndex = availableNames.length - 1;
-    return availableNames[getRandomNumber(0, lastIndex)];
+function getRandomName(isWoman) {
+    const names = isWoman
+        ? womanNames
+        : manNames;
+    const lastIndex = names.length - 1;
+    return names[getRandomNumber(0, lastIndex)];
 }
 
 function getRandoBool() {
@@ -64,10 +69,19 @@ for (let i = 0; i < totalUserCount; i++) {
     users.push(randomUser);
 }
 
+function generateUsers(count) {
+    var users = [];
+    for (let i = 0; i < count; i++) {
+        var randomUser = generateUser();
+        users.push(randomUser);
+    }
+    return users;
+}
+
 printUsersToConsole(users);
 
 const whonanCount = users
-    .filter(user => user.isWhoman)
+    .filter(user => user.isWoman)
     .length;
 
 console.log(`whoman [${whonanCount}/${totalUserCount}]`);
@@ -81,7 +95,7 @@ sortUserByField(users, (u) => u.name);
 
 printUsersToConsole(users);
 
-sortUserByField(users, (u) => u.isWhoman);
+sortUserByField(users, (u) => u.isWoman);
 
 printUsersToConsole(users);
 

@@ -10,11 +10,30 @@
     display: block;
 }
 
-
 .password .cover{
     display: block;
 }
 
 .password.active .cover{
+    display: none;
+}
+
+.show-hide{
+    display: none;
+}
+
+.users{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user{
+    border: 1px red solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.user.template{
     display: none;
 }
