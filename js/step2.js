@@ -1,4 +1,10 @@
 $(document).ready(function () {
+
+    $('.do').click(function(){
+        const userEnterThisNumber = $('.magic-number').val() - 0;
+        alert(userEnterThisNumber * 2);
+    });
+
     // $('.password').click(function(){
     //     $(this).toggleClass('active');
     // });
