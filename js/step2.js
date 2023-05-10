@@ -1,9 +1,29 @@
 $(document).ready(function () {
+    let users = [];
 
-    $('.do').click(function(){
-        const userEnterThisNumber = $('.magic-number').val() - 0;
-        alert(userEnterThisNumber * 2);
+    $('.generateUsers').click(function () {
+        const userCount = $('.user-count').val() - 0;
+        users = generateUsers(userCount);
+        reDrawUsers();
     });
+
+    $('.sortByAge').click(function () {
+        sortUserByAge(users);
+        reDrawUsers();
+    });
+
+    $('.sortByName').click(function () {
+        sortUserByName(users);
+        reDrawUsers();
+    });
+
+    function reDrawUsers() {
+        $('.users').empty();
+        for (let index = 0; index < users.length; index++) {
+            const user = users[index];
+            drawUser(user);
+        }
+    }
 
     // $('.password').click(function(){
     //     $(this).toggleClass('active');
@@ -13,14 +33,6 @@ $(document).ready(function () {
     // userTag.find('.name').text('Ivan');
     // userTag.find('.age').text(20);
     // userTag.find('.avatar').attr('src', 'images/avatars/man.png');
-
-    const users = generateUsers(15);
-
-    for (let index = 0; index < users.length; index++) {
-        const user = users[index];
-        drawUser(user);
-    }
-
 
     function drawUser(user) {
         const copyOfUserTag = $('.user.template').clone();
@@ -49,7 +61,4 @@ $(document).ready(function () {
 
         $('.users').append(copyOfUserTag);
     }
-
-
-
 });
