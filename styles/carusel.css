@@ -1,0 +1,12 @@
+.carusel{
+
+}
+
+.center{
+    width: 100px;
+    max-height: 100px;
+}
+.next{
+    width: 0;
+    max-height: 100px;
+}

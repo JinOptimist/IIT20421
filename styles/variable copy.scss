@@ -1,0 +1,16 @@
+$border-bike-color: rgb(159, 0, 71);
+$bike-container-height: 200px;
+
+$menu-link-width: 230px;
+
+$secondary-background-color: rgba(162, 27, 27, 0.12);
+$primary-background-color: #ccc;
+
+$primary-color: black;
+$highlight-color: red;
+
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
