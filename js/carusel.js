@@ -22,18 +22,30 @@ $(document).ready(function () {
         index = cyrcleIndex(index - 1);
         moveToImage('.prev');
     });
+    $('.go').click(function () {
+        let newtest = $('.currentIndex').val() - 0;
+        index = newtest;
+        const imageUrl = images[newtest];
+        $('.next').attr('src', imageUrl);
+        moveToImage('.next');
+    });
+    $('.btn-newImg').click(function () {
+        let newURL = $('.addNewImg').val();
+        images.push(newURL);
+        init();
 
-    $('.o-blocks a').click(function (){
+    });
+    $('.o-blocks a').click(function () {
         const newIndex = $(this).attr('index') - 0;
-        index  = newIndex;
+        index = newIndex;
         const imageUrl = images[index];
         $('.next').attr('src', imageUrl);
         moveToImage('.next');
-        
+
         // updateImagesBaseOnIndex();
     });
 
-    function moveToImage(blockSelector){
+    function moveToImage(blockSelector) {
         $('.center').animate(
             {
                 width: 0
@@ -49,13 +61,12 @@ $(document).ready(function () {
             function () {
                 //At the end of animation
                 updateImagesBaseOnIndex();
-
                 $('.center').css('width', '100px');
                 $(blockSelector).css('width', '0');
             });
     }
 
-    function updateImagesBaseOnIndex(){
+    function updateImagesBaseOnIndex() {
         let prevIndex = cyrcleIndex(index - 1);
         let nextIndex = cyrcleIndex(index + 1);
 
@@ -69,20 +80,21 @@ $(document).ready(function () {
         $(`.o-blocks a[index=${index}]`).text('x');
     }
 
-    function cyrcleIndex(index){
+    function cyrcleIndex(index) {
         let goodIndex = index;
-        if (goodIndex < 0){
+        if (goodIndex < 0) {
             goodIndex = images.length - 1;
         }
 
-        if (goodIndex >= images.length){
+        if (goodIndex >= images.length) {
             goodIndex = 0;
         }
 
         return goodIndex;
     }
 
-    function init(){
+    function init() {
+        $('.o-blocks').empty();
         for (let i = 0; i < images.length; i++) {
             //const oTag = $('<a>');
             const oTagJquery = $(document.createElement('a'));
