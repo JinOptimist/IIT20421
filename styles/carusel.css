@@ -6,7 +6,24 @@
     width: 100px;
     max-height: 100px;
 }
-.next{
+
+.small-image{
     width: 0;
     max-height: 100px;
+}
+
+.prev{
+    border: 1px green solid;
+}
+
+.center{
+    border: 1px red solid;
+}
+
+.next{
+    border: 1px blue solid;
+}
+
+.currentIndex{
+    width: 40px;
 }
